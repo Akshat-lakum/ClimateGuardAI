@@ -92,8 +92,8 @@ streamlit run app.py
 3. **Agriculture**: AgriStack, Crop Cutting Experiments
 4. **Climate Reports**: IPCC AR6, NATCOM reports
 
-## Contributors
-- Your Team Name
+## Contributor
+- Akshat Lakum
 - ET GenAI Hackathon 2025
 
 ## License
