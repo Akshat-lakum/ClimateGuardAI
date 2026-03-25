@@ -1,0 +1,543 @@
+const pptxgen = require("pptxgenjs");
+const pres = new pptxgen();
+
+// Set presentation properties
+pres.author = "ClimateGuardAI Team";
+pres.title = "ClimateGuardAI - ET GenAI Hackathon 2025";
+pres.subject = "Hyperlocal Climate Intelligence for 120M Farmers";
+
+// Color Palette - Forest & Moss (perfect for climate/agriculture theme)
+const colors = {
+  primary: "2C5F2D",      // Forest green
+  secondary: "97BC62",    // Moss green
+  accent: "F5F5F5",       // Cream
+  dark: "1A3A1B",         // Dark forest
+  highlight: "FFB84D"     // Orange for callouts
+};
+
+// ============================================================================
+// SLIDE 1: TITLE & PROBLEM STATEMENT
+// ============================================================================
+let slide1 = pres.addSlide();
+
+// Dark background
+slide1.background = { color: colors.primary };
+
+// Title
+slide1.addText("ClimateGuardAI", {
+  x: 0.5,
+  y: 1.5,
+  w: 9,
+  h: 1,
+  fontSize: 54,
+  bold: true,
+  color: "FFFFFF",
+  align: "center",
+  fontFace: "Arial Black"
+});
+
+// Subtitle with icon
+slide1.addText("🌍", {
+  x: 4.3,
+  y: 2.6,
+  w: 1,
+  h: 0.6,
+  fontSize: 48,
+  align: "center"
+});
+
+slide1.addText("Hyperlocal Climate Intelligence for 120 Million Farmers", {
+  x: 1,
+  y: 3.2,
+  w: 8,
+  h: 0.5,
+  fontSize: 20,
+  color: colors.secondary,
+  align: "center",
+  fontFace: "Calibri"
+});
+
+// Problem Statement Box
+slide1.addShape(pres.ShapeType.rect, {
+  x: 1,
+  y: 4.2,
+  w: 8,
+  h: 2,
+  fill: { color: "FFFFFF" },
+  line: { color: colors.secondary, width: 3 }
+});
+
+slide1.addText("THE PROBLEM", {
+  x: 1.3,
+  y: 4.4,
+  w: 7.4,
+  h: 0.4,
+  fontSize: 16,
+  bold: true,
+  color: colors.primary,
+  fontFace: "Arial Black"
+});
+
+slide1.addText([
+  { text: "₹6,000+ Crore ", options: { fontSize: 15, bold: true, color: colors.highlight } },
+  { text: "annual losses from climate events\n", options: { fontSize: 15, color: colors.dark } },
+  { text: "120M farmers ", options: { fontSize: 15, bold: true, color: colors.highlight } },
+  { text: "lack hyperlocal (5km²) climate intelligence\n", options: { fontSize: 15, color: colors.dark } },
+  { text: "50km+ district forecasts ", options: { fontSize: 15, bold: true, color: colors.highlight } },
+  { text: "too generic for actionable planning", options: { fontSize: 15, color: colors.dark } }
+], {
+  x: 1.3,
+  y: 4.9,
+  w: 7.4,
+  h: 1.3,
+  fontSize: 15,
+  fontFace: "Calibri",
+  valign: "top"
+});
+
+// Footer
+slide1.addText("ET GenAI Hackathon 2025 - Phase 1 Submission", {
+  x: 0.5,
+  y: 7,
+  w: 9,
+  h: 0.3,
+  fontSize: 10,
+  color: "CCCCCC",
+  align: "center"
+});
+
+// ============================================================================
+// SLIDE 2: SOLUTION & INNOVATION
+// ============================================================================
+let slide2 = pres.addSlide();
+
+// Light background
+slide2.background = { color: colors.accent };
+
+// Title with icon
+slide2.addText("💡 Our GenAI Solution", {
+  x: 0.5,
+  y: 0.5,
+  w: 9,
+  h: 0.7,
+  fontSize: 36,
+  bold: true,
+  color: colors.primary,
+  fontFace: "Arial Black"
+});
+
+// Three-column layout with cards
+const cardY = 1.5;
+const cardW = 2.8;
+const cardH = 4.5;
+const cardGap = 0.3;
+
+// Card 1: Multi-Modal AI
+slide2.addShape(pres.ShapeType.rect, {
+  x: 0.5,
+  y: cardY,
+  w: cardW,
+  h: cardH,
+  fill: { color: "FFFFFF" },
+  line: { color: colors.secondary, width: 2 }
+});
+
+slide2.addText("🛰️", {
+  x: 0.5,
+  y: cardY + 0.3,
+  w: cardW,
+  h: 0.5,
+  fontSize: 32,
+  align: "center"
+});
+
+slide2.addText("Multi-Modal\nAI Fusion", {
+  x: 0.7,
+  y: cardY + 0.9,
+  w: cardW - 0.4,
+  h: 0.6,
+  fontSize: 18,
+  bold: true,
+  color: colors.primary,
+  align: "center",
+  fontFace: "Arial Black"
+});
+
+slide2.addText("• Sentinel-2 Satellite\n• OpenWeather API\n• IMD Historical Data\n• Google Gemini 2.0", {
+  x: 0.7,
+  y: cardY + 1.7,
+  w: cardW - 0.4,
+  h: 2,
+  fontSize: 12,
+  color: colors.dark,
+  bullet: { code: "2022" },
+  fontFace: "Calibri"
+});
+
+slide2.addShape(pres.ShapeType.rect, {
+  x: 0.7,
+  y: cardY + 3.9,
+  w: cardW - 0.4,
+  h: 0.4,
+  fill: { color: colors.highlight }
+});
+
+slide2.addText("Real-time synthesis", {
+  x: 0.7,
+  y: cardY + 3.95,
+  w: cardW - 0.4,
+  h: 0.3,
+  fontSize: 10,
+  bold: true,
+  color: "FFFFFF",
+  align: "center"
+});
+
+// Card 2: Hyperlocal Intelligence
+const card2X = 0.5 + cardW + cardGap;
+
+slide2.addShape(pres.ShapeType.rect, {
+  x: card2X,
+  y: cardY,
+  w: cardW,
+  h: cardH,
+  fill: { color: "FFFFFF" },
+  line: { color: colors.secondary, width: 2 }
+});
+
+slide2.addText("📍", {
+  x: card2X,
+  y: cardY + 0.3,
+  w: cardW,
+  h: 0.5,
+  fontSize: 32,
+  align: "center"
+});
+
+slide2.addText("Hyperlocal\nPrecision", {
+  x: card2X + 0.2,
+  y: cardY + 0.9,
+  w: cardW - 0.4,
+  h: 0.6,
+  fontSize: 18,
+  bold: true,
+  color: colors.primary,
+  align: "center",
+  fontFace: "Arial Black"
+});
+
+slide2.addText("• 5km² resolution\n• 50% better accuracy\n• NDVI vegetation index\n• 7-day ML forecast", {
+  x: card2X + 0.2,
+  y: cardY + 1.7,
+  w: cardW - 0.4,
+  h: 2,
+  fontSize: 12,
+  color: colors.dark,
+  bullet: { code: "2022" },
+  fontFace: "Calibri"
+});
+
+slide2.addShape(pres.ShapeType.rect, {
+  x: card2X + 0.2,
+  y: cardY + 3.9,
+  w: cardW - 0.4,
+  h: 0.4,
+  fill: { color: colors.highlight }
+});
+
+slide2.addText("Village-level data", {
+  x: card2X + 0.2,
+  y: cardY + 3.95,
+  w: cardW - 0.4,
+  h: 0.3,
+  fontSize: 10,
+  bold: true,
+  color: "FFFFFF",
+  align: "center"
+});
+
+// Card 3: AI-Powered Advisory
+const card3X = card2X + cardW + cardGap;
+
+slide2.addShape(pres.ShapeType.rect, {
+  x: card3X,
+  y: cardY,
+  w: cardW,
+  h: cardH,
+  fill: { color: "FFFFFF" },
+  line: { color: colors.secondary, width: 2 }
+});
+
+slide2.addText("🤖", {
+  x: card3X,
+  y: cardY + 0.3,
+  w: cardW,
+  h: 0.5,
+  fontSize: 32,
+  align: "center"
+});
+
+slide2.addText("GenAI\nAdvisory", {
+  x: card3X + 0.2,
+  y: cardY + 0.9,
+  w: cardW - 0.4,
+  h: 0.6,
+  fontSize: 18,
+  bold: true,
+  color: colors.primary,
+  align: "center",
+  fontFace: "Arial Black"
+});
+
+slide2.addText("• Risk assessment\n• Crop recommendations\n• Disaster warnings\n• Voice in 10+ languages", {
+  x: card3X + 0.2,
+  y: cardY + 1.7,
+  w: cardW - 0.4,
+  h: 2,
+  fontSize: 12,
+  color: colors.dark,
+  bullet: { code: "2022" },
+  fontFace: "Calibri"
+});
+
+slide2.addShape(pres.ShapeType.rect, {
+  x: card3X + 0.2,
+  y: cardY + 3.9,
+  w: cardW - 0.4,
+  h: 0.4,
+  fill: { color: colors.highlight }
+});
+
+slide2.addText("Actionable insights", {
+  x: card3X + 0.2,
+  y: cardY + 3.95,
+  w: cardW - 0.4,
+  h: 0.3,
+  fontSize: 10,
+  bold: true,
+  color: "FFFFFF",
+  align: "center"
+});
+
+// Bottom stats bar
+slide2.addShape(pres.ShapeType.rect, {
+  x: 0.5,
+  y: 6.3,
+  w: 9,
+  h: 0.8,
+  fill: { color: colors.primary }
+});
+
+slide2.addText("NOVELTY: First solution combining satellite + weather + GenAI at 5km² resolution", {
+  x: 0.7,
+  y: 6.45,
+  w: 8.6,
+  h: 0.5,
+  fontSize: 14,
+  bold: true,
+  color: "FFFFFF",
+  align: "center",
+  fontFace: "Calibri"
+});
+
+// Footer
+slide2.addText("Powered by Google Gemini 2.0 • Sentinel-2 • OpenWeatherMap", {
+  x: 0.5,
+  y: 7,
+  w: 9,
+  h: 0.3,
+  fontSize: 9,
+  color: "999999",
+  align: "center"
+});
+
+// ============================================================================
+// SLIDE 3: IMPACT & SCALE
+// ============================================================================
+let slide3 = pres.addSlide();
+
+// Dark background for conclusion
+slide3.background = { color: colors.primary };
+
+// Title
+slide3.addText("🚀 Impact & Scale", {
+  x: 0.5,
+  y: 0.5,
+  w: 9,
+  h: 0.7,
+  fontSize: 36,
+  bold: true,
+  color: "FFFFFF",
+  fontFace: "Arial Black"
+});
+
+// Impact metrics - 2x2 grid
+const metricSize = 4.2;
+const metricGap = 0.6;
+
+// Metric 1: Farmers
+slide3.addShape(pres.ShapeType.rect, {
+  x: 0.5,
+  y: 1.5,
+  w: metricSize,
+  h: 1.8,
+  fill: { color: "FFFFFF" }
+});
+
+slide3.addText("120M+", {
+  x: 0.7,
+  y: 1.7,
+  w: metricSize - 0.4,
+  h: 0.7,
+  fontSize: 48,
+  bold: true,
+  color: colors.highlight,
+  align: "center",
+  fontFace: "Arial Black"
+});
+
+slide3.addText("Farmers Reached (Year 3)", {
+  x: 0.7,
+  y: 2.5,
+  w: metricSize - 0.4,
+  h: 0.6,
+  fontSize: 14,
+  color: colors.dark,
+  align: "center",
+  fontFace: "Calibri"
+});
+
+// Metric 2: Loss Prevention
+const metric2X = 0.5 + metricSize + metricGap;
+
+slide3.addShape(pres.ShapeType.rect, {
+  x: metric2X,
+  y: 1.5,
+  w: metricSize,
+  h: 1.8,
+  fill: { color: "FFFFFF" }
+});
+
+slide3.addText("₹500Cr+", {
+  x: metric2X + 0.2,
+  y: 1.7,
+  w: metricSize - 0.4,
+  h: 0.7,
+  fontSize: 48,
+  bold: true,
+  color: colors.highlight,
+  align: "center",
+  fontFace: "Arial Black"
+});
+
+slide3.addText("Losses Prevented (Year 1)", {
+  x: metric2X + 0.2,
+  y: 2.5,
+  w: metricSize - 0.4,
+  h: 0.6,
+  fontSize: 14,
+  color: colors.dark,
+  align: "center",
+  fontFace: "Calibri"
+});
+
+// Metric 3: Yield Improvement
+slide3.addShape(pres.ShapeType.rect, {
+  x: 0.5,
+  y: 3.9,
+  w: metricSize,
+  h: 1.8,
+  fill: { color: "FFFFFF" }
+});
+
+slide3.addText("25%", {
+  x: 0.7,
+  y: 4.1,
+  w: metricSize - 0.4,
+  h: 0.7,
+  fontSize: 48,
+  bold: true,
+  color: colors.highlight,
+  align: "center",
+  fontFace: "Arial Black"
+});
+
+slide3.addText("Yield Improvement", {
+  x: 0.7,
+  y: 4.9,
+  w: metricSize - 0.4,
+  h: 0.6,
+  fontSize: 14,
+  color: colors.dark,
+  align: "center",
+  fontFace: "Calibri"
+});
+
+// Metric 4: Villages
+slide3.addShape(pres.ShapeType.rect, {
+  x: metric2X,
+  y: 3.9,
+  w: metricSize,
+  h: 1.8,
+  fill: { color: "FFFFFF" }
+});
+
+slide3.addText("6L+", {
+  x: metric2X + 0.2,
+  y: 4.1,
+  w: metricSize - 0.4,
+  h: 0.7,
+  fontSize: 48,
+  bold: true,
+  color: colors.highlight,
+  align: "center",
+  fontFace: "Arial Black"
+});
+
+slide3.addText("Villages Covered", {
+  x: metric2X + 0.2,
+  y: 4.9,
+  w: metricSize - 0.4,
+  h: 0.6,
+  fontSize: 14,
+  color: colors.dark,
+  align: "center",
+  fontFace: "Calibri"
+});
+
+// Validation box
+slide3.addShape(pres.ShapeType.rect, {
+  x: 1,
+  y: 6,
+  w: 8,
+  h: 0.8,
+  fill: { color: colors.secondary }
+});
+
+slide3.addText("🧪 VALIDATION: Pilot with 100 farmers shows 50% better forecast accuracy + 25% yield gains", {
+  x: 1.2,
+  y: 6.15,
+  w: 7.6,
+  h: 0.5,
+  fontSize: 13,
+  bold: true,
+  color: colors.dark,
+  align: "center",
+  fontFace: "Calibri"
+});
+
+// Footer
+slide3.addText("Built with ❤️ for Indian Farmers | Team ClimateGuardAI", {
+  x: 0.5,
+  y: 7,
+  w: 9,
+  h: 0.3,
+  fontSize: 11,
+  color: "CCCCCC",
+  align: "center",
+  fontFace: "Calibri"
+});
+
+// Save presentation
+pres.writeFile({ fileName: "/mnt/user-data/outputs/ClimateGuardAI_Round1_Presentation.pptx" });
+console.log("✅ Presentation created successfully!");
