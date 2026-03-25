@@ -60,7 +60,7 @@ ClimateGuardAI/
 ### Installation
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/ClimateGuardAI.git
+git clone https://github.com/Akshat-lakum/ClimateGuardAI.git
 cd ClimateGuardAI
 
 # Create virtual environment
