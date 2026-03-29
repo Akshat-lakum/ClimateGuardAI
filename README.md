@@ -113,7 +113,7 @@ MIT License -->
 
 
 
-# 🌍 ClimateGuardAI
+#  ClimateGuardAI
 
 **Hyperlocal Climate Intelligence for 120 Million Indian Farmers**
 
@@ -124,11 +124,11 @@ MIT License -->
 
 > **Multi-agent AI system delivering 5km² resolution climate advisories through satellite imagery + weather forecasts + GenAI synthesis**
 
-![ClimateGuardAI Demo](docs/demo_screenshot.png)
+<!-- ![ClimateGuardAI Demo](docs/demo_screenshot.png) -->
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # Clone repository
@@ -164,21 +164,21 @@ streamlit run src/ui/app.py
 
 ---
 
-## 📊 The Problem
+##  The Problem
 
 **₹6,000+ crore** lost annually by Indian farmers due to climate events. Why?
 
-- 🌍 **District-level forecasts** (50km+) miss village-level variations
-- ⏱️ **48-72 hour delays** for extension officer advice
-- 📱 **Limited access** to real-time satellite data
-- 🗣️ **Language barriers** (advisories only in English)
-- 💰 **High costs** (₹10,000-25,000/year for private services)
+-  **District-level forecasts** (50km+) miss village-level variations
+-  **48-72 hour delays** for extension officer advice
+-  **Limited access** to real-time satellite data
+-  **Language barriers** (advisories only in English)
+-  **High costs** (₹10,000-25,000/year for private services)
 
 **Impact:** 120 million smallholder farmers lack actionable climate intelligence for daily farming decisions.
 
 ---
 
-## 💡 Our Solution
+##  Our Solution
 
 **ClimateGuardAI** is a **multi-agent AI system** that delivers:
 
@@ -188,10 +188,10 @@ streamlit run src/ui/app.py
 - Spatial risk propagation using Graph Neural Networks
 
 ### 2. Multi-Modal Data Fusion
-- 🛰️ **Satellite:** Sentinel-2 NDVI, NDWI, EVI (vegetation health)
-- 🌤️ **Weather:** OpenWeatherMap 7-day forecast
-- 📈 **Historical:** IMD climate data (1950-2024)
-- 🤖 **GenAI:** Google Gemini 2.0 synthesis
+-  **Satellite:** Sentinel-2 NDVI, NDWI, EVI (vegetation health)
+-  **Weather:** OpenWeatherMap 7-day forecast
+-  **Historical:** IMD climate data (1950-2024)
+-  **GenAI:** Google Gemini 2.0 synthesis
 
 ### 3. AI-Powered Advisory
 - **Risk Assessment:** HIGH/MEDIUM/LOW with reasoning
@@ -201,15 +201,15 @@ streamlit run src/ui/app.py
 - **Long-term Adaptation:** Climate-smart agriculture strategies
 
 ### 4. Compliance Guardrails
-- ✅ Full audit trail for every decision
-- ✅ No banned chemicals recommended
-- ✅ Monsoon calendar adherence (Kharif/Rabi/Zaid)
-- ✅ Conservative risk assessment (safety-first)
-- ✅ Source citations for all claims
+-  Full audit trail for every decision
+-  No banned chemicals recommended
+-  Monsoon calendar adherence (Kharif/Rabi/Zaid)
+-  Conservative risk assessment (safety-first)
+-  Source citations for all claims
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -240,7 +240,7 @@ streamlit run src/ui/app.py
 
 ---
 
-## 📈 Impact (Pilot Results)
+##  Impact (Pilot Results)
 
 **Pilot:** 100 farmers, Nashik district, Maharashtra (Kharif 2025)
 
@@ -254,43 +254,43 @@ streamlit run src/ui/app.py
 
 ### At Scale (Phase 3: 10M Farmers)
 
-- 💰 **₹500+ crore** crop losses prevented annually
-- 👥 **10M farmers** reached
-- 🏘️ **6 lakh villages** covered
-- ⏱️ **67 hours/year** saved per farmer
-- 💵 **₹0.60/farmer** delivery cost
-- 🌾 **35M tons** additional food production
+-  **₹500+ crore** crop losses prevented annually
+-  **10M farmers** reached
+-  **6 lakh villages** covered
+-  **67 hours/year** saved per farmer
+-  **₹0.60/farmer** delivery cost
+-  **35M tons** additional food production
 
 **ROI:** 88,833:1 for farmers
 
 ---
 
-## 🎯 Key Features
+##  Key Features
 
 ### For Farmers
-- 📍 **Hyperlocal forecasts** (5km² resolution)
-- 🛰️ **Real-time satellite** vegetation monitoring
-- 🤖 **AI-powered** crop recommendations
-- 🗣️ **Voice advisories** in 10+ Indian languages
-- 📱 **WhatsApp delivery** (zero app install)
-- 📶 **Offline mode** for low-connectivity areas
+-  **Hyperlocal forecasts** (5km² resolution)
+-  **Real-time satellite** vegetation monitoring
+-  **AI-powered** crop recommendations
+-  **Voice advisories** in 10+ Indian languages
+-  **WhatsApp delivery** (zero app install)
+-  **Offline mode** for low-connectivity areas
 
 ### For Agricultural Extension Officers
-- 📊 **Dashboard** for 35,000+ farmers
-- 📢 **Bulk advisories** with one click
-- 📈 **Impact tracking** and analytics
-- ⚠️ **Automated alerts** for extreme weather
-- 📝 **Audit trails** for compliance
+-  **Dashboard** for 35,000+ farmers
+-  **Bulk advisories** with one click
+-  **Impact tracking** and analytics
+-  **Automated alerts** for extreme weather
+-  **Audit trails** for compliance
 
 ### For Policy Makers
-- 🗺️ **Regional risk maps** for disaster planning
-- 📊 **Impact analytics** (yield, losses prevented)
-- 💹 **ROI dashboards** for budget allocation
-- 📈 **Scalability metrics** (cost per farmer)
+-  **Regional risk maps** for disaster planning
+-  **Impact analytics** (yield, losses prevented)
+-  **ROI dashboards** for budget allocation
+-  **Scalability metrics** (cost per farmer)
 
 ---
 
-## 🔧 Installation & Setup
+##  Installation & Setup
 
 ### Prerequisites
 
@@ -351,7 +351,7 @@ python quick_setup.py
 python test_setup.py
 ```
 
-You should see all ✅ checkmarks!
+You should see all checkmarks!
 
 **7. Run the application:**
 
@@ -372,7 +372,7 @@ http://localhost:8501
 
 ---
 
-## 📚 Documentation
+##  Documentation
 
 - **[Architecture](docs/ARCHITECTURE.md)** - System design, agent roles, data flow
 - **[Impact Model](docs/IMPACT_MODEL.md)** - Quantified business impact, ROI
@@ -381,9 +381,9 @@ http://localhost:8501
 
 ---
 
-## 🎬 Demo
+<!-- ##  Demo
 
-**[Watch 3-Minute Demo Video →](https://youtube.com/demo_link)**
+**[Watch 3-Minute Demo Video →](https://youtube.com/demo_link)** -->
 
 ### Try It Yourself
 
@@ -399,7 +399,7 @@ http://localhost:8501
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 ### Run All Tests
 ```bash
@@ -422,7 +422,7 @@ python test_setup.py
 
 ---
 
-## 📊 Performance
+##  Performance
 
 | Metric | Target | Achieved |
 |--------|--------|----------|
@@ -435,52 +435,52 @@ python test_setup.py
 
 ---
 
-## 🚀 Roadmap
+##  Roadmap
 
-### Phase 1: Pilot (Months 1-3) ✅ COMPLETED
-- ✅ 10 districts, 100,000 farmers
-- ✅ Pilot validation in Nashik
-- ✅ Core features implemented
+### Phase 1: Pilot (Months 1-3) COMPLETED
+-  10 districts, 100,000 farmers
+-  Pilot validation in Nashik
+-  Core features implemented
 
-### Phase 2: Regional Scale (Months 4-9) 🔄 IN PROGRESS
-- 🔄 50 districts, 1M farmers
-- 🔄 Kubernetes deployment
-- 🔄 Multi-language support
+### Phase 2: Regional Scale (Months 4-9) IN PROGRESS
+-  50 districts, 1M farmers
+-  Kubernetes deployment
+-  Multi-language support
 
-### Phase 3: National Scale (Year 2) 📅 PLANNED
-- 📅 200 districts, 10M farmers
-- 📅 PM-KISAN integration
-- 📅 WhatsApp Business API
-- 📅 Voice call delivery (IVR)
+### Phase 3: National Scale (Year 2)  PLANNED
+-  200 districts, 10M farmers
+-  PM-KISAN integration
+-  WhatsApp Business API
+-  Voice call delivery (IVR)
 
-### Phase 4: Pan-India + International (Year 3+) 🌍 VISION
-- 🌍 640 districts (all India)
-- 🌍 120M farmers
-- 🌍 International expansion (Bangladesh, Sri Lanka, Kenya, Nigeria)
+### Phase 4: Pan-India + International (Year 3+) VISION
+-  640 districts (all India)
+-  120M farmers
+-  International expansion (Bangladesh, Sri Lanka, Kenya, Nigeria)
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 **Areas where you can help:**
-- 🐛 Bug fixes and testing
-- 📝 Documentation improvements
-- 🌐 Language translations
-- 🎨 UI/UX enhancements
-- 📊 ML model improvements
-- 🔧 Infrastructure optimization
+-  Bug fixes and testing
+-  Documentation improvements
+-  Language translations
+-  UI/UX enhancements
+-  ML model improvements
+-  Infrastructure optimization
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
 
 ---
 
-## 🏆 Hackathon
+##  Hackathon
 
 **ET GenAI Hackathon 2026 - Round 2 Submission**
 
@@ -491,22 +491,22 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 ---
 
-## 👥 Team
+##  Team
 
 - **Akshat Lakum** - Lead Developer & System Architect
 - Built with ❤️ for Indian farmers
 
 ---
 
-## 📞 Contact
+##  Contact
 
 - **GitHub:** [@akshat-lakum](https://github.com/akshat-lakum)
-- **Email:** [your-email@example.com]
-- **LinkedIn:** [Your LinkedIn]
+- **Email:** [akshatlakum@gmail.com]
+- **LinkedIn:** [https://www.linkedin.com/in/akshat-lakum/]
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Google Earth Engine** - Free satellite imagery
 - **Google Gemini** - Powerful and free GenAI API
@@ -517,7 +517,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 <!-- ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### Main Dashboard
 ![Dashboard](docs/screenshots/dashboard.png)
@@ -534,40 +534,40 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 ### AI Advisory
 ![Advisory](docs/screenshots/ai_advisory.png)
 
----
+----->
 
-## 🌟 Why ClimateGuardAI?
+##  Why ClimateGuardAI?
 
 **No existing solution has ALL FOUR:**
 
-1. ✅ **Hyperlocal precision** (5km² vs 50km+)
-2. ✅ **Multi-modal AI fusion** (satellite + weather + GenAI)
-3. ✅ **Explainable intelligence** (actionable advice, not just data)
-4. ✅ **Vernacular voice delivery** (10+ languages, offline-capable)
+1.  **Hyperlocal precision** (5km² vs 50km+)
+2.  **Multi-modal AI fusion** (satellite + weather + GenAI)
+3.  **Explainable intelligence** (actionable advice, not just data)
+4.  **Vernacular voice delivery** (10+ languages, offline-capable)
 
 **We're the first agricultural advisory system to combine satellite + ML + GenAI with full compliance guardrails and audit trails.**
 
 ---
 
-## 📊 By the Numbers
+##  By the Numbers
 
-- 🌍 **120M** farmers (target reach)
-- 💰 **₹500Cr+** losses prevented annually
-- 📍 **5km²** resolution (10x better than alternatives)
-- ⚡ **60s** advisory generation time
-- 💵 **₹0.60** cost per farmer (at scale)
-- 🎯 **88,833:1** ROI for farmers
-- 🌾 **25%** yield improvement
-- 📈 **49%** better forecast accuracy
+-  **120M** farmers (target reach)
+-  **₹500Cr+** losses prevented annually
+-  **5km²** resolution (10x better than alternatives)
+-  **60s** advisory generation time
+-  **₹0.60** cost per farmer (at scale)
+-  **88,833:1** ROI for farmers
+-  **25%** yield improvement
+-  **49%** better forecast accuracy
 
 ---
 
-**Built with 🌍 for a sustainable future | Changing lives, one farm at a time**
+**Built with for a sustainable future | Changing lives, one farm at a time**
 
---- -->
+--- 
 
-## ⭐ Star this repo if you found it useful!
+##  Star this repo if you found it useful!
 
 <p align="center">
-  <a href="#top">⬆️ Back to Top</a>
+  <a href="#top"> Back to Top</a>
 </p>
