@@ -515,7 +515,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 - **Farmer communities in Nashik** - Pilot participation and feedback
 - **Anthropic Claude** - Development assistance
 
----
+<!-- ---
 
 ## 📸 Screenshots
 
@@ -564,7 +564,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 **Built with 🌍 for a sustainable future | Changing lives, one farm at a time**
 
----
+--- -->
 
 ## ⭐ Star this repo if you found it useful!
 
