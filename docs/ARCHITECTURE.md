@@ -20,17 +20,17 @@ ClimateGuardAI is a multi-agent AI system that delivers hyperlocal climate intel
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│                        USER INTERFACE LAYER                          │
-│  Streamlit Dashboard | WhatsApp Bot | Voice IVR | Mobile App         │
+│                        USER INTERFACE LAYER                         │
+│  Streamlit Dashboard | WhatsApp Bot | Voice IVR | Mobile App        │
 └────────────────────────┬────────────────────────────────────────────┘
                          │
                          ▼
 ┌─────────────────────────────────────────────────────────────────────┐
-│                      ORCHESTRATION AGENT                             │
-│  - Coordinates multi-agent workflow                                  │
-│  - Manages data flow between agents                                  │
-│  - Ensures compliance at each step                                   │
-│  - Maintains audit trail                                             │
+│                      ORCHESTRATION AGENT                            │
+│  - Coordinates multi-agent workflow                                 │
+│  - Manages data flow between agents                                 │
+│  - Ensures compliance at each step                                  │
+│  - Maintains audit trail                                            │
 └───┬─────────────────┬──────────────────┬──────────────────┬─────────┘
     │                 │                  │                  │
     ▼                 ▼                  ▼                  ▼
