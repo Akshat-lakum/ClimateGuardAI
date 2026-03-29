@@ -2,6 +2,8 @@
 FastAPI Backend for ClimateGuardAI
 CORRECTED VERSION: Runs uvicorn server correctly
 """
+
+from fastapi import FastAPI, HTTPException
 from dotenv import load_dotenv
 from pathlib import Path
 import os
@@ -10,6 +12,7 @@ import os
 project_root = Path(__file__).parent.parent.parent
 env_path = project_root / '.env'
 load_dotenv(dotenv_path=env_path)
+print(f"✅ Loading .env from: {env_path}")
 
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
