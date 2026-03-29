@@ -502,7 +502,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 
 - **GitHub:** [@akshat-lakum](https://github.com/akshat-lakum)
 - **Email:** [akshatlakum@gmail.com]
-- **LinkedIn:** [https://www.linkedin.com/in/akshat-lakum/]
+- **LinkedIn:** [Akshat lakum](https://www.linkedin.com/in/akshat-lakum/)
 
 ---
 
