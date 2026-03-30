@@ -515,26 +515,26 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 - **Farmer communities in Nashik** - Pilot participation and feedback
 - **Anthropic Claude** - Development assistance
 
-<!-- ---
+---
 
 ##  Screenshots
 
 ### Main Dashboard
-![Dashboard](docs/screenshots/dashboard.png)
+![Dashboard]("C:\Users\AKASHAT\ClimateGuardAI\docs\Dashboard.png")
 
 ### Risk Assessment
-![Risk](docs/screenshots/risk_assessment.png)
+![Risk]("C:\Users\AKASHAT\ClimateGuardAI\docs\Risk Assessment.png")
 
 ### Weather Forecast
-![Weather](docs/screenshots/weather_forecast.png)
+![Weather]("C:\Users\AKASHAT\ClimateGuardAI\docs\Weather Forecast 1.png" , "C:\Users\AKASHAT\ClimateGuardAI\docs\Weather Forecast 2.png")
 
 ### Satellite Data
-![Satellite](docs/screenshots/satellite_data.png)
+![Satellite]("C:\Users\AKASHAT\ClimateGuardAI\docs\Satellite Data.png")
 
 ### AI Advisory
-![Advisory](docs/screenshots/ai_advisory.png)
+![Advisory]("C:\Users\AKASHAT\ClimateGuardAI\docs\AI Advisory.png")
 
------>
+---
 
 ##  Why ClimateGuardAI?
 
