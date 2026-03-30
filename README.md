@@ -523,16 +523,17 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 ![Dashboard](docs/Dashboard.png)
 
 ### Risk Assessment
-![Risk](docs/Risk Assessment.png)
+![Risk](docs/Risk_Assessment.png)
 
 ### Weather Forecast
-![Weather](docs/Weather Forecast 1.png , docs/Weather Forecast 2.png)
+![Weather 1](docs/Weather_Forecast_1.png)
+![Weather 2](docs/Weather_Forecast_2.png)
 
 ### Satellite Data
-![Satellite](docs/Satellite Data.png)
+![Satellite](docs/Satellite_Data.png)
 
 ### AI Advisory
-![Advisory](docs/AI Advisory.png)
+![Advisory](docs/AI_Advisory.png)
 
 ---
 
