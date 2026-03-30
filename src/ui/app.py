@@ -451,6 +451,6 @@ st.divider()
 st.markdown("""
 <div style="text-align: center; color: #666; padding: 1rem;">
     <p>🌍 <strong>ClimateGuardAI</strong> - ET GenAI Hackathon 2025</p>
-    <p>Built using Claude AI, Satellite Data & Weather APIs</p>
+    <p>Built using Satellite Data & Weather APIs</p>
 </div>
 """, unsafe_allow_html=True)
