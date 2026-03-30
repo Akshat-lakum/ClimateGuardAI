@@ -9,6 +9,7 @@ import plotly.express as px
 from datetime import datetime
 import json
 
+
 # Page config
 st.set_page_config(
     page_title="ClimateGuardAI",
@@ -126,7 +127,7 @@ with st.sidebar:
     
     st.divider()
     
-    generate_btn = st.button("🚀 Generate Advisory", type="primary", width='stretch')
+    generate_btn = st.button("🚀 Generate Advisory", type="primary", use_container_width=True)
 
 
 # Main content
@@ -218,7 +219,7 @@ if generate_btn:
                     hovermode='x unified'
                 )
                 
-                st.plotly_chart(fig_temp, width='stretch')
+                st.plotly_chart(fig_temp, use_container_width=True)
                 
                 # Rainfall and Humidity
                 col1, col2 = st.columns(2)
@@ -232,7 +233,7 @@ if generate_btn:
                         color='Rainfall (mm)',
                         color_continuous_scale='Blues'
                     )
-                    st.plotly_chart(fig_rain, width='stretch')
+                    st.plotly_chart(fig_rain, use_container_width=True)
                 
                 with col2:
                     fig_humidity = px.line(
@@ -242,7 +243,7 @@ if generate_btn:
                         title="Humidity Forecast",
                         markers=True
                     )
-                    st.plotly_chart(fig_humidity, width='stretch')
+                    st.plotly_chart(fig_humidity, use_container_width=True)
                 
                 st.divider()
                 
@@ -295,17 +296,17 @@ if generate_btn:
                     st.divider()
                 
                 # AI Advisory
-                st.header("🤖 AI-Powered Advisory")
+                st.header(" AI-Powered Advisory")
                 
                 advisory = data['advisory']
                 
                 # Create tabs for different sections
                 tab1, tab2, tab3, tab4, tab5 = st.tabs([
-                    "🎯 Risk Assessment",
-                    "⚡ Immediate Actions",
-                    "🌾 Crop Recommendations",
-                    "🚨 Disaster Preparedness",
-                    "📈 Long-term Adaptation"
+                    " Risk Assessment",
+                    " Immediate Actions",
+                    " Crop Recommendations",
+                    " Disaster Preparedness",
+                    " Long-term Adaptation"
                 ])
                 
                 with tab1:
@@ -365,6 +366,21 @@ if generate_btn:
                                 voice_data = voice_response.json()
                                 st.success("Voice advisory generated!")
                                 st.text_area("Voice Message", voice_data['voice_message'], height=200)
+
+                # Move Full Report button inside this block so 'data' exists
+                st.download_button(
+                    label="📥 Download Full Report (JSON)",
+                    data=json.dumps({
+                        "location": location_name,
+                        "timestamp": datetime.now().isoformat(),
+                        "risk_level": data['risk_level'],
+                        "weather": data['weather_forecast'],
+                        "satellite": data.get('satellite_data'),
+                        "advisory": data['advisory']
+                    }, indent=2),
+                    file_name=f"climate_advisory_{location_name}_{datetime.now().strftime('%Y%m%d')}.json",
+                    mime="application/json"
+                )
                 
             else:
                 st.error(f"API Error: {response.status_code} - {response.text}")
@@ -378,25 +394,25 @@ if generate_btn:
 else:
     # Welcome screen
     st.info("""
-    👈 **Get Started:**
+     **Get Started:**
     1. Select a location from the sidebar (or enter custom coordinates)
     2. Adjust settings as needed
     3. Click "Generate Advisory" to get your climate intelligence report
     
     **What You'll Get:**
-    - 🌤️ 7-day hyperlocal weather forecast
-    - 🛰️ Real-time satellite vegetation & water indices
-    - 🎯 AI-powered risk assessment
-    - 🌾 Personalized crop recommendations
-    - 🚨 Early disaster warnings
-    - 📱 Voice advisory in your local language
+    -  7-day hyperlocal weather forecast
+    -  Real-time satellite vegetation & water indices
+    -  AI-powered risk assessment
+    -  Personalized crop recommendations
+    -  Early disaster warnings
+    -  Voice advisory in your local language
     """)
     
     # Sample visualization
-    st.subheader("📊 Sample Climate Trends")
+    st.subheader(" Sample Climate Trends")
     
     # Create sample data
-    sample_dates = pd.date_range(start='2024-01-01', end='2024-12-31', freq='ME')  # ME = Month End
+    sample_dates = pd.date_range(start='2024-01-01', end='2024-12-31', freq='ME')
     sample_data = pd.DataFrame({
         'Month': sample_dates.strftime('%B'),
         'Temperature': [28, 30, 33, 35, 34, 30, 28, 27, 28, 30, 29, 28],
@@ -428,7 +444,7 @@ else:
         hovermode='x unified'
     )
     
-    st.plotly_chart(fig, width='stretch')
+    st.plotly_chart(fig, use_container_width=True)
 
 # Footer
 st.divider()

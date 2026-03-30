@@ -526,7 +526,7 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 ![Risk](docs/Risk_Assessment.png)
 
 ### Weather Forecast
-![Weather 1](docs/Weather_Forecast_1.png)
+![Weather 1](docs/WeatherForecast_1.png)
 ![Weather 2](docs/Weather_Forecast_2.png)
 
 ### Satellite Data
