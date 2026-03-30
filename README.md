@@ -520,19 +520,19 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 ##  Screenshots
 
 ### Main Dashboard
-![Dashboard]("C:\Users\AKASHAT\ClimateGuardAI\docs\Dashboard.png")
+![Dashboard](docs/Dashboard.png)
 
 ### Risk Assessment
-![Risk]("C:\Users\AKASHAT\ClimateGuardAI\docs\Risk Assessment.png")
+![Risk](docs/Risk Assessment.png)
 
 ### Weather Forecast
-![Weather]("C:\Users\AKASHAT\ClimateGuardAI\docs\Weather Forecast 1.png" , "C:\Users\AKASHAT\ClimateGuardAI\docs\Weather Forecast 2.png")
+![Weather](docs/Weather Forecast 1.png , docs/Weather Forecast 2.png)
 
 ### Satellite Data
-![Satellite]("C:\Users\AKASHAT\ClimateGuardAI\docs\Satellite Data.png")
+![Satellite](docs/Satellite Data.png)
 
 ### AI Advisory
-![Advisory]("C:\Users\AKASHAT\ClimateGuardAI\docs\AI Advisory.png")
+![Advisory](docs/AI Advisory.png)
 
 ---
 
